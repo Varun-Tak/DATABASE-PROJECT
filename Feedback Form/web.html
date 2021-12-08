@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback Form</title>
+</head>
+<body style="background-color: bisque;" >
+    <div> <h1> Student Feedback Form </h1></div>
+    <form action="insert.php" method ="POST">
+        <table>
+            <tr>
+                <td>
+                    Registration No. :
+                </td>
+                <td>
+                    <input type = "text" name= "Registration_no">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Academic Year :
+                </td>
+                <td>
+                    <input type = "text" name= "Academic_year">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Semester :
+                </td>
+                <td>
+                    <input type = "text" name= "Semester">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   Date of feedback :
+                </td>
+                <td>
+                    <input type = "text" name= "Date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Branch :
+                </td>
+                <td>
+                    <input type = "text" name= "Branch">
+                </td>
+            </tr>
+
+        </table>
+
+        <div><h3>1.  Has the Teacher covered entire
+            Syllabus as prescribed by University? </h3></div>
+
+        <table border="2px" > 
+           <thead>
+               <th>
+                   Subject name :
+               </th>
+               <th>
+                   Subject Code :
+               </th> 
+               <th>
+                   Your response
+               </th>
+           </thead>
+           <tr>
+               <td> 
+                   DBMS
+               </td>
+               <td> 
+                   DBMS-101
+               </td>
+               <td>
+                   <input type ="radio" name="SyDBMS" value="Yes"> Yes
+                   <input type ="radio" name="SyDBMS" value="No"> No
+
+               </td>
+
+           </tr>
+           <tr>
+            <td> 
+                CN
+            </td>
+            <td> 
+                CN-102
+            </td>
+            <td>
+                <input type ="radio" name="SyCN" value="Yes"> Yes
+                <input type ="radio" name="SyCN" value="No"> No
+
+            </td>
+
+        </tr>
+        <tr>
+            <td> 
+                DSA
+            </td>
+            <td> 
+                DSA-103
+            </td>
+            <td>
+                <input type ="radio" name="SyDSA" value="Yes"> Yes
+                <input type ="radio" name="SyDSA" value="No"> No
+
+            </td>
+
+        </tr>
+        <tr>
+            <td> 
+                TIS
+            </td>
+            <td> 
+                TIS-104
+            </td>
+            <td>
+                <input type ="radio" name="SyTIS" value="Yes"> Yes
+                <input type ="radio" name="SyTIS" value="No"> No
+
+            </td>
+
+        </tr>
+        <tr>
+            <td> 
+                Microprocessors
+            </td>
+            <td> 
+                MI-101
+            </td>
+            <td>
+                <input type ="radio" name="SyMI" value="Yes"> Yes
+                <input type ="radio" name="SyMI" value="No" > No 
+
+            </td>
+
+        </tr>
+           
+
+                
+
+
+            
+        </table>  
+    <br>
+    <div> <h3> 2. Effectiveness of Teacher in terms of</h3></div>
+    <table border ="1px">
+        <tr> 
+            <td>
+             2.1 Technical content
+            </td>
+            <td>
+                DBMS
+            </td>
+            <td>
+                <input type = "radio" name="E1DBMS"  value="Excellent"> Excellent 
+                <input type = "radio" name="E1DBMS"  value="Very Good"> Very Good
+                <input type = "radio" name="E1DBMS"  value = "Good"> Good
+                <input type = "radio" name="E1DBMS"  value="Average"> Average
+                <input type = "radio" name="E1DBMS"  value="Below Average"> Below Average
+
+             </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                CN
+            </td>
+            <td>
+                <input type = "radio" name="E1CN" value="Excellent"> Excellent 
+                <input type = "radio" name="E1CN" value="Very Good"> Very Good
+                <input type = "radio" name="E1CN" value = "Good"> Good
+                <input type = "radio" name="E1CN" value="Average"> Average
+                <input type = "radio" name="E1CN" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                DSA
+            </td>
+            <td>
+                <input type = "radio" name="E1DSA" value="Excellent"> Excellent
+                <input type = "radio" name="E1DSA" value="Very Good"> Very Good
+                <input type = "radio" name="E1DSA" value = "Good"> Good
+                <input type = "radio" name="E1DSA" value="Average"> Average
+                <input type = "radio" name="E1DSA" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                TIS
+            </td>
+            <td>
+                <input type = "radio" name="E1TIS" value="Excellent"> Excellent
+                <input type = "radio" name="E1TIS" value="Very Good"> Very Good
+                <input type = "radio" name="E1TIS" value = "Good"> Good
+                <input type = "radio" name="E1TIS" value="Average"> Average
+                <input type = "radio" name="E1TIS" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                Microprocessors 
+            </td>
+            <td>
+                <input type = "radio" name="E1MI" value="Excellent"> Excellent
+                <input type = "radio" name="E1MI" value="Very Good"> Very Good
+                <input type = "radio" name="E1MI" value = "Good"> Good
+                <input type = "radio" name="E1MI" value="Average"> Average
+                <input type = "radio" name="E1MI" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>       
+        </tr>
+        <tr>       
+        </tr>
+        <tr>        
+        </tr>
+        <tr>     
+        </tr>
+        <tr> 
+           
+            <td>
+               2.2 Communication skills
+            </td>
+            <td>
+                DBMS
+            </td>
+            <td>
+                <input type = "radio" name="E2DBMS" value="Excellent"> Excellent
+                <input type = "radio" name="E2DBMS" value="Very Good"> Very Good
+                <input type = "radio" name="E2DBMS" value = "Good"> Good
+                <input type = "radio" name="E2DBMS" value="Average"> Average
+                <input type = "radio" name="E2DBMS" value="Below Average"> Below Average
+
+             </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                CN
+            </td>
+            <td>
+                <input type = "radio" name="E2CN" value="Excellent"> Excellent
+                <input type = "radio" name="E2CN" value="Very Good"> Very Good
+                <input type = "radio" name="E2CN" value = "Good"> Good
+                <input type = "radio" name="E2CN" value="Average"> Average
+                <input type = "radio" name="E2CN" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                DSA
+            </td>
+            <td>
+                <input type = "radio" name="E2DSA" value="Excellent"> Excellent
+                <input type = "radio" name="E2DSA" value="Very Good"> Very Good
+                <input type = "radio" name="E2DSA" value = "Good"> Good
+                <input type = "radio" name="E2DSA" value="Average"> Average
+                <input type = "radio" name="E2DSA" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                TIS
+            </td>
+            <td>
+                <input type = "radio" name="E2TIS" value="Excellent"> Excellent
+                <input type = "radio" name="E2TIS" value="Very Good"> Very Good
+                <input type = "radio" name="E2TIS" value = "Good"> Good
+                <input type = "radio" name="E2TIS" value="Average"> Average
+                <input type = "radio" name="E2TIS" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                Microprocessors 
+            </td>
+            <td>
+                <input type = "radio" name="E2MI" value="Excellent"> Excellent
+                <input type = "radio" name="E2MI" value="Very Good"> Very Good
+                <input type = "radio" name="E2MI" value = "Good"> Good
+                <input type = "radio" name="E2MI" value="Average"> Average
+                <input type = "radio" name="E2MI" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>       
+        </tr>
+        <tr>       
+        </tr>
+        <tr>        
+        </tr>
+        <tr>     
+        </tr>
+        <tr> 
+            <td>
+              2.3  Availability beyond normal classes
+                and co-operation to solve individual
+                problems
+            </td>
+            <td>
+                DBMS
+            </td>
+            <td>
+                <input type = "radio" name="E3DBMS" value="Excellent"> Excellent
+                <input type = "radio" name="E3DBMS" value="Very Good"> Very Good
+                <input type = "radio" name="E3DBMS" value = "Good"> Good
+                <input type = "radio" name="E3DBMS" value="Average"> Average
+                <input type = "radio" name="E3DBMS" value="Below Average"> Below Average
+
+             </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                CN
+            </td>
+            <td>
+                <input type = "radio" name="E3CN" value="Excellent"> Excellent
+                <input type = "radio" name="E3CN" value="Very Good"> Very Good
+                <input type = "radio" name="E3CN" value = "Good"> Good
+                <input type = "radio" name="E3CN" value="Average"> Average
+                <input type = "radio" name="E3CN" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                DSA
+            </td>
+            <td>
+                <input type = "radio" name="E3DSA" value="Excellent"> Excellent
+                <input type = "radio" name="E3DSA" value="Very Good"> Very Good
+                <input type = "radio" name="E3DSA" value = "Good"> Good
+                <input type = "radio" name="E3DSA" value="Average"> Average
+                <input type = "radio" name="E3DSA" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                TIS
+            </td>
+            <td>
+                <input type = "radio" name="E3TIS" value="Excellent"> Excellent
+                <input type = "radio" name="E3TIS" value="Very Good"> Very Good
+                <input type = "radio" name="E3TIS" value = "Good"> Good
+                <input type = "radio" name="E3TIS" value="Average"> Average
+                <input type = "radio" name="E3TIS" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                Microprocessors 
+            </td>
+            <td>
+                <input type = "radio" name="E3MI" value="Excellent"> Excellent
+                <input type = "radio" name="E3MI" value="Very Good"> Very Good
+                <input type = "radio" name="E3MI" value = "Good"> Good
+                <input type = "radio" name="E3MI" value="Average"> Average
+                <input type = "radio" name="E3MI" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>       
+        </tr>
+        <tr>       
+        </tr>
+        <tr>        
+        </tr>
+        <tr>     
+        </tr>
+        <tr> 
+            <td>
+               2.4 Pace on which contents were covered
+            </td>
+            <td>
+                DBMS
+            </td>
+            <td>
+                <input type = "radio" name="E4DBMS" value="Excellent"> Excellent
+                <input type = "radio" name="E4DBMS" value="Very Good"> Very Good
+                <input type = "radio" name="E4DBMS" value = "Good"> Good
+                <input type = "radio" name="E4DBMS" value="Average"> Average
+                <input type = "radio" name="E4DBMS" value="Below Average"> Below Average
+
+             </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                CN
+            </td>
+            <td>
+                <input type = "radio" name="E4CN" value="Excellent"> Excellent
+                <input type = "radio" name="E4CN" value="Very Good"> Very Good
+                <input type = "radio" name="E4CN" value = "Good"> Good
+                <input type = "radio" name="E4CN" value="Average"> Average
+                <input type = "radio" name="E4CN" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                DSA
+            </td>
+            <td>
+                <input type = "radio" name="E4DSA" value="Excellent"> Excellent
+                <input type = "radio" name="E4DSA" value="Very Good"> Very Good
+                <input type = "radio" name="E4DSA" value = "Good"> Good
+                <input type = "radio" name="E4DSA" value="Average"> Average
+                <input type = "radio" name="E4DSA" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                TIS
+            </td>
+            <td>
+                <input type = "radio" name="E4TIS" value="Excellent"> Excellent
+                <input type = "radio" name="E4TIS" value="Very Good"> Very Good
+                <input type = "radio" name="E4TIS" value = "Good"> Good
+                <input type = "radio" name="E4TIS" value="Average"> Average
+                <input type = "radio" name="E4TIS" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                Microprocessors 
+            </td>
+            <td>
+                <input type = "radio" name="E4MI" value="Excellent"> Excellent
+                <input type = "radio" name="E4MI" value="Very Good"> Very Good
+                <input type = "radio" name="E4MI" value = "Good"> Good
+                <input type = "radio" name="E4MI" value="Average"> Average
+                <input type = "radio" name="E4MI" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>       
+        </tr>
+        <tr>       
+        </tr>
+        <tr>        
+        </tr>
+        <tr>     
+        </tr>
+        <tr> 
+            <td>
+               2.5 Overall effectiveness
+            </td>
+            <td>
+                DBMS
+            </td>
+            <td>
+                <input type = "radio" name="E5DBMS" value="Excellent"> Excellent
+                <input type = "radio" name="E5DBMS" value="Very Good"> Very Good
+                <input type = "radio" name="E5DBMS" value = "Good"> Good
+                <input type = "radio" name="E5DBMS" value="Average"> Average
+                <input type = "radio" name="E5DBMS" value="Below Average"> Below Average
+
+             </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                CN
+            </td>
+            <td>
+                <input type = "radio" name="E5CN" value="Excellent"> Excellent
+                <input type = "radio" name="E5CN" value="Very Good"> Very Good
+                <input type = "radio" name="E5CN" value = "Good"> Good
+                <input type = "radio" name="E5CN" value="Average"> Average
+                <input type = "radio" name="E5CN" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                DSA
+            </td>
+            <td>
+                <input type = "radio" name="E5DSA" value="Excellent"> Excellent
+                <input type = "radio" name="E5DSA" value="Very Good"> Very Good
+                <input type = "radio" name="E5DSA" value = "Good"> Good
+                <input type = "radio" name="E5DSA" value="Average"> Average
+                <input type = "radio" name="E5DSA" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                TIS
+            </td>
+            <td>
+                <input type = "radio" name="E5TIS" value="Excellent"> Excellent
+                <input type = "radio" name="E5TIS" value="Very Good"> Very Good
+                <input type = "radio" name="E5TIS" value = "Good"> Good
+                <input type = "radio" name="E5TIS" value="Average"> Average
+                <input type = "radio" name="E5TIS" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                Microprocessors 
+            </td>
+            <td>
+                <input type = "radio" name="E5MI" value="Excellent"> Excellent
+                <input type = "radio" name="E5MI" value="Very Good"> Very Good
+                <input type = "radio" name="E5MI" value = "Good"> Good
+                <input type = "radio" name="E5MI" value="Average"> Average
+                <input type = "radio" name="E5MI" value="Below Average"> Below Average
+
+            </td>
+        </tr>
+        
+        </table> 
+        <div><h3>3.How do you rate the contents of the
+            curricular ?
+             </h3></div>
+             <table>
+                 <tr> 
+                     <td> 
+                         DBMS
+                     </td>
+                     <td>
+                        <input type = "radio" name="CRDBMS" value="Excellent"> Excellent
+                        <input type = "radio" name="CRDBMS" value="Very Good"> Very Good
+                        <input type = "radio" name="CRDBMS" value = "Good"> Good
+                        <input type = "radio" name="CRDBMS" value="Average"> Average
+                        <input type = "radio" name="CRDBMS" value="Below Average"> Below Average
+
+                     </td>
+                 </tr>
+                 <tr>
+                    
+                    <td>
+                        CN
+                    </td>
+                    <td>
+                        <input type = "radio" name="CRCN" value="Excellent"> Excellent
+                        <input type = "radio" name="CRCN" value="Very Good"> Very Good
+                        <input type = "radio" name="CRCN" value = "Good"> Good
+                        <input type = "radio" name="CRCN" value="Average"> Average
+                        <input type = "radio" name="CRCN" value="Below Average"> Below Average
+        
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>
+                        DSA
+                    </td>
+                    <td>
+                        <input type = "radio" name="CRDSA" value="Excellent"> Excellent
+                        <input type = "radio" name="CRDSA" value="Very Good"> Very Good
+                        <input type = "radio" name="CRDSA" value = "Good"> Good
+                        <input type = "radio" name="CRDSA" value="Average"> Average
+                        <input type = "radio" name="CRDSA" value="Below Average"> Below Average
+        
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>
+                        TIS
+                    </td>
+                    <td>
+                        <input type = "radio" name="CRTIS" value="Excellent"> Excellent
+                        <input type = "radio" name="CRTIS" value="Very Good"> Very Good
+                        <input type = "radio" name="CRTIS" value = "Good"> Good
+                        <input type = "radio" name="CRTIS" value="Average"> Average
+                        <input type = "radio" name="CRTIS" value="Below Average"> Below Average
+        
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>
+                        Microprocessors 
+                    </td>
+                    <td>
+                        <input type = "radio" name="CRMI" value="Excellent"> Excellent
+                        <input type = "radio" name="CRMI" value="Very Good"> Very Good
+                        <input type = "radio" name="CRMI" value = "Good"> Good
+                        <input type = "radio" name="CRMI" value="Average"> Average
+                        <input type = "radio" name="CRMI" value="Below Average"> Below Average
+        
+                    </td>
+                </tr>
+
+             </table>
+             <div><h3>4. How do you rate lab experiments, if
+                applicable?
+                
+                 </h3></div>
+                 <table>
+                     <tr> 
+                         <td> 
+                             DBMS
+                         </td>
+                         <td>
+                            <input type = "radio" name="LRDBMS" value="Excellent"> Excellent
+                            <input type = "radio" name="LRDBMS" value="Very Good"> Very Good
+                            <input type = "radio" name="LRDBMS" value = "Good"> Good
+                            <input type = "radio" name="LRDBMS" value="Average"> Average
+                            <input type = "radio" name="LRDBMS" value="Below Average"> Below Average
+    
+                         </td>
+                     </tr>
+                     <tr>
+                        
+                        <td>
+                            CN
+                        </td>
+                        <td>
+                            <input type = "radio" name="LRCN" value="Excellent"> Excellent
+                            <input type = "radio" name="LRCN" value="Very Good"> Very Good
+                            <input type = "radio" name="LRCN" value = "Good"> Good
+                            <input type = "radio" name="LRCN" value="Average"> Average
+                            <input type = "radio" name="LRCN" value="Below Average"> Below Average
+            
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                            DSA
+                        </td>
+                        <td>
+                            <input type = "radio" name="LRDSA" value="Excellent"> Excellent
+                            <input type = "radio" name="LRDSA" value="Very Good"> Very Good
+                            <input type = "radio" name="LRDSA" value = "Good"> Good
+                            <input type = "radio" name="LRDSA" value="Average"> Average
+                            <input type = "radio" name="LRDSA" value="Below Average"> Below Average
+            
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                            TIS
+                        </td>
+                        <td>
+                            <input type = "radio" name="LRTIS" value="Excellent"> Excellent
+                            <input type = "radio" name="LRTIS" value="Very Good"> Very Good
+                            <input type = "radio" name="LRTIS" value = "Good"> Good
+                            <input type = "radio" name="LRTIS" value="Average"> Average
+                            <input type = "radio" name="LRTIS" value="Below Average"> Below Average
+            
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td>
+                            Microprocessors 
+                        </td>
+                        <td>
+                            <input type = "radio" name="LRMI" value="Excellent"> Excellent
+                            <input type = "radio" name="LRMI" value="Very Good"> Very Good
+                            <input type = "radio" name="LRMI" value = "Good"> Good
+                            <input type = "radio" name="LRMI" value="Average"> Average
+                            <input type = "radio" name="LRMI" value="Below Average"> Below Average
+            
+                        </td>
+                    </tr>
+    
+                 </table>
+
+                 <table> 
+                     <tr>
+                         <td> 
+                             Remarks
+                         </td>
+                         <td>
+                             <input type ="text" name= "REMARKS">
+                         </td>
+                     </tr>
+                     <tr>
+                        <td> 
+                            CGPA
+                        </td>
+                        <td>
+                            <input type ="number" name= "CGPA">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            Attenance
+                        </td>
+                        <td>
+                            <input type ="number" name= "ATTENDANCE">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <input type="submit" value = submit name="">
+                        </td>
+                    </tr>
+
+
+                 </table>
+
+
+
+       
+
+
+
+
+
+    </form>
+</body>
+</html>

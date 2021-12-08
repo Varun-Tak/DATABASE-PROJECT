@@ -1,0 +1,574 @@
+  <!DOCTYPE HTML>
+  <html>
+  <head>
+    <title>Register Form</title>
+  </head>
+  <body style="background-color:lightblue;">
+    <h1  style=" text-align:center; color:darkblue;">Admission Web Portal</h1>
+    <form action="back_partB.php" method="POST" enctype="multipart/form-data">
+      <div>
+        <h3>Personal Details</h3></div>
+
+        <table>
+
+          <tr>
+            <td>Image :</td>
+            <td><input type="file" name="image" required></td>
+          </tr>
+
+          <tr>
+            <td>Name in English :</td>
+            <td><input type="text" name="username_eng" required></td>
+          </tr>
+          <tr>
+            <td>Name in Hindi :</td>
+            <td><input type="text" name="username_hin" required></td>
+          </tr>
+
+
+          <tr>
+            <td>Gender :</td>
+            <td>
+             <input type="radio" name="gender" value="m" 
+             required>Male
+             <input type="radio" name="gender" value="f" 
+             required>Female
+             <input type="radio" name="gender" value="o"
+             required>Others
+           </td>
+         </tr>
+
+         <tr>
+           <td>Blood Group :</td>
+           <td><input type="text" name="bloodgroup" required></td>
+         </tr>
+
+         <tr>
+          <td>Date of Birth :</td>
+          <td><input type="Date" name="DOB" required></td>
+        </tr>
+
+        <tr>
+          <td>Mobile No 1  :</td>
+          <td><input type="text" name="phone1" 
+            required></td>
+          </tr>
+
+          <tr>
+            <td>Mobile No 2  :</td>
+            <td><input type="text" name="phone2" 
+              required></td>
+            </tr>
+
+            <tr>
+              <td>Email  :</td>
+              <td><input type="text" name="email" 
+                required></td>
+              </tr>
+
+              <tr>
+                <td>Adhaar Number :</td>
+                <td><input type="text" name="adhaar" required></td>
+              </tr>
+
+              <tr>
+                <td>Father's Name  :</td>
+                <td><input type="text" name="fname" 
+                  required></td>
+                </tr>
+
+                <tr>
+                  <td>Father's occupation  :</td>
+                  <td><input type="text" name="foccup" 
+                    required></td>
+                  </tr>
+
+                  <tr>
+                    <td>Mother's Name  :</td>
+                    <td><input type="text" name="mname" 
+                      required></td>
+                    </tr>
+
+                    <tr>
+                      <td>Mother's occupation  :</td>
+                      <td><input type="text" name="moccup" 
+                        required></td>
+                      </tr>
+
+                      <tr>
+                        <td>Branch  :</td>
+                        <td>
+                         <input type="radio" name="Branch" value="CSE" required>CSE
+                         <input type="radio" name="Branch" value="ECE" required>ECE
+                       </td>
+                     </tr>
+
+                     <tr>
+                      <td>Minority_Detail  :</td>
+                      <td>
+                       <input type="radio" name="Minority_Detail" value="Muslim" required>Muslim
+                       <input type="radio" name="Minority_Detail" value="Jain" required>Jain
+                       <input type="radio" name="Minority_Detail" value="Sikh" required>Sikh
+                       <input type="radio" name="Minority_Detail" value="Christian" required>Christian
+                       <input type="radio" name="Minority_Detail" value="None" required>None
+                     </td>
+                   </tr>
+
+                   <tr>
+                    <td>Physically_Disabled  :</td>
+                    <td>
+                     <input type="radio" name="Physically_Disabled" value="Yes" required>Yes
+                     <input type="radio" name="Physically_Disabled" value="No" required>No
+                   </td>
+                 </tr>
+               </table>
+
+               <div>
+                <h3>Jee Mains Detail</h3></div>
+
+                <table>
+
+                  <tr>
+                    <td>Round_of_Allotment  :</td>
+                    <td><input type="text" name="Round_of_Allotment" 
+                      required></td>
+                    </tr>
+
+                    <tr>
+                      <td>Jee Roll No.  :</td>
+                      <td><input type="text" name="jee_roll" 
+                        required></td>
+                      </tr>
+
+                      <tr>
+                        <td>Jee Rank  :</td>
+                        <td><input type="text" name="jee_rank" 
+                          required></td>
+                        </tr>
+
+                        <tr>
+                          <td>Jee Marks  :</td>
+                          <td><input type="text" name="jee_mark" 
+                            required></td>
+                          </tr>
+
+                          <tr>
+                            <td>Jee Year  :</td>
+                            <td><input type="text" name="jee_year" 
+                              required></td>
+                            </tr>
+
+                            <tr>
+                              <td>Allotment Category  :</td>
+                              <td>
+                               <input type="radio" name="allot_cat" value="OP" required>OP
+                               <input type="radio" name="allot_cat" value="SC" required>SC
+                               <input type="radio" name="allot_cat" value="ST" required>ST
+                               <input type="radio" name="allot_cat" value="OBC" required>OBC
+                               <input type="radio" name="allot_cat" value="EWS & PD" required>EWS&PD
+                             </td>
+                           </tr>
+
+                           <tr>
+                            <td>Candidate Category  :</td>
+                            <td>
+                             <input type="radio" name="cand_cat" value="OP" required>
+                             OP
+                             <input type="radio" name="cand_cat" value="SC" required>SC
+                             <input type="radio" name="cand_cat" value="ST" required>ST
+                             <input type="radio" name="cand_cat" value="OBC" required>OBC
+                             <input type="radio" name="cand_cat" value="EWS&PD" required>EWS&PD
+                           </td>
+                         </tr>
+                       </table>
+
+                       <div>
+                        <h3>Fees at JoSSA 2019 Counseling </h3>
+                      </div>
+
+
+                      <table>
+
+                        <tr>
+                          <td>DD/ECS No.   :</td>
+                          <td><input type="text" name="dd_coun" 
+                            required></td>
+                          </tr>
+
+                          <tr>
+                            <td>Date  :</td>
+                            <td><input type="text" name="date_coun" 
+                              required></td>
+                            </tr>
+
+                            <tr>
+                              <td>Amount in Rs :</td>
+                              <td><input type="text" name="amt_coun" 
+                                required></td>
+                              </tr>
+                            </table>
+                            <div>
+                              <h3>Fees at Institute Reporting </h3>
+                            </div>
+
+                            <table>
+
+
+
+                              <tr>
+                                <td>DD/ECS No.   :</td>
+                                <td><input type="text" name="dd_repo" 
+                                  required></td>
+                                </tr>
+
+                                <tr>
+                                  <td>Date  :</td>
+                                  <td><input type="text" name="date_repo" 
+                                    required></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>Amount in Rs :</td>
+                                    <td><input type="text" name="amt_repo" 
+                                      required></td>
+                                    </tr>
+                                  </table>
+                                  <table>                                
+
+                                    <tr>
+                                      <td>Hostel Required  :</td>
+                                      <td>
+                                       <input type="radio" name="Hostel_Required" value="Yes" required>
+                                       Yes
+                                       <input type="radio" name="Hostel_Required" value="No" required>
+                                       No
+                                     </td>
+                                   </tr>
+                                 </table>
+                                 <div>
+                                  <h3>Verify the following documents</h3></div>
+                                  <table>
+
+                                   <tr>
+                                    <td>Seat Allotment Letter  :</td>
+                                    <td>
+                                     <input type="radio" name="Seat_Allotment_Letter" value="Yes" required>Yes
+                                     <input type="radio" name="Seat_Allotment_Letter" value="No" required>No
+                                   </td>
+                                 </tr>
+
+                                 <tr>
+                                  <td>Jee Rank Card  :</td>
+                                  <td>
+                                   <input type="radio" name="Jee_Rank_Card" value="Yes" required>Yes
+                                   <input type="radio" name="Jee_Rank_Card" value="No" required>No
+                                 </td>
+                               </tr>
+
+                               <tr>
+                                <td>Photo Id Proof  :</td>
+                                <td>
+                                 <input type="radio" name="Photo_Id_Proof" value="Yes" required>Yes
+                                 <input type="radio" name="Photo_Id_Proof" value="No" required>No
+                               </td>
+                             </tr>
+
+                             <tr>
+                              <td>Certificate for proof of DOB  :</td>
+                              <td>
+                               <input type="radio" name="DOB_proof" value="Yes" required>Yes
+                               <input type="radio" name="DOB_proof" value="No" required>No
+                             </td>
+                           </tr>
+
+                           <tr>
+                            <td>Qaulifying Examination Mark-Sheet  :</td>
+                            <td>
+                             <input type="radio" name="mark_sheet" value="Yes" required>Yes
+                             <input type="radio" name="mark_sheet" value="No" required>No
+                           </td>
+                         </tr>
+
+                         <tr>
+                          <td>Income Cerificate(For EWS)  :</td>
+                          <td>
+                           <input type="radio" name="income_Certificate" value="Yes" required>Yes
+                           <input type="radio" name="income_Certificate" value="No" required>No
+                         </td>
+                       </tr>
+
+                       <tr>
+                        <td>Category Certificate :</td>
+                        <td>
+                         <input type="radio" name="Category_Certificate" value="Yes" required>Yes
+                         <input type="radio" name="Category_Certificate" value="No" required>No
+                       </td>
+                     </tr>
+
+                     <tr>
+                      <td>Cast Validity(if issued by Maharastra Govt) :</td>
+                      <td>
+                       <input type="radio" name="Cast_Validity" value="Yes" required>Yes
+                       <input type="radio" name="Cast_Validity" value="No" required>No
+                     </td>
+                   </tr>
+
+                   <tr>
+                    <td>Non-Creamy Layer Certificate for OBC Category :</td>
+                    <td>
+                     <input type="radio" name="OBC_Cerificate" value="Yes" required>Yes
+                     <input type="radio" name="OBC_Cerificate" value="No" required>No
+                   </td>
+                 </tr>
+
+                 <tr>
+                  <td>Transfer Certificate :</td>
+                  <td>
+                   <input type="radio" name="Transfer_Certificate" value="Yes" required>Yes
+                   <input type="radio" name="Transfer_Certificate" value="No" required>No
+                 </td>
+               </tr>
+
+               <tr>
+                <td>Migration Certificate :</td>
+                <td>
+                 <input type="radio" name="Migration_Certificate" value="Yes" required>Yes
+                 <input type="radio" name="Migration_Certificate" value="No" required>No
+               </td>
+             </tr>
+
+             <tr>
+              <td>Gap Certificate :</td>
+              <td>
+               <input type="radio" name="Gap_Certificate" value="Yes" required>Yes
+               <input type="radio" name="Gap_Certificate" value="No" required>No
+             </td>
+           </tr>
+
+           <tr>
+            <td>Scanned Copies of documents uploaded :</td>
+            <td>
+             <input type="radio" name="Scanned_Copies" value="Yes" required>Yes
+             <input type="radio" name="Scanned_Copies" value="No" required>No
+           </td>
+         </tr> 
+       </table>
+
+       <div>
+         <h3>Address of correspondence</h3></div>
+         <table>
+
+
+           <tr>
+            <td>House Number :</td>
+            <td><input type="text" name="housenumcorr" 
+              required></td>
+            </tr>
+
+            <tr>
+              <td>Street Name :</td>
+              <td><input type="text" name="streetnamecorr" 
+                required></td>
+              </tr>
+
+              <tr>
+                <td>City :</td>
+                <td><input type="text" name="citynamecorr" 
+                  required></td>
+                </tr>
+
+                <tr>
+                  <td>State :</td>
+                  <td><input type="text" name="statenamecorr" 
+                    required></td>
+                  </tr>
+
+                  <tr>
+                    <td>Pincode :</td>
+                    <td><input type="text" name="pincodenamecorr" 
+                      required></td>
+                    </tr>
+
+                    <tr>
+                      <td>Mobile No. :</td>
+                      <td><input type="text" name="mobNocorr" 
+                        required></td>
+                      </tr>
+                    </table>
+                    <div><h3>Permanent Address</h3></div>
+                    <table>
+
+
+
+                      <tr>
+                        <td>House Number :</td>
+                        <td><input type="text" name="housenumperm" 
+                          required></td>
+                        </tr>
+
+                        <tr>
+                          <td>Street Name :</td>
+                          <td><input type="text" name="streetnameperm" 
+                            required></td>
+                          </tr>
+
+                          <tr>
+                            <td>City :</td>
+                            <td><input type="text" name="citynameperm" 
+                              required></td>
+                            </tr>
+
+                            <tr>
+                              <td>State :</td>
+                              <td><input type="text" name="statenameperm" 
+                                required></td>
+                              </tr>
+
+                              <tr>
+                                <td>Pincode :</td>
+                                <td><input type="text" name="pincodenameperm" 
+                                  required></td>
+                                </tr>
+
+                                <tr>
+                                  <td>Mobile No. :</td>
+                                  <td><input type="text" name="mobNoperm" 
+                                    required></td>
+                                  </tr>
+                                </table>
+                                <div>
+                                  <h3>School Education</h3></div>
+                                  <h4>Tenth/SSC</h4>
+                                  <table>
+
+                                    <tr>
+                                      <td>Name of Board :</td>
+                                      <td><input type="text" name="nameofboardten" 
+                                        required></td>
+                                      </tr>                                
+
+                                      <tr>
+                                        <td>Year of Passing :</td>
+                                        <td><input type="text" name="yearofpassten" 
+                                          required></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td>Marks obtained :</td>
+                                          <td><input type="text" name="marksobtainedten" 
+                                            required></td>
+                                          </tr>
+
+                                          <tr>
+                                            <td>Percentage :</td>
+                                            <td><input type="text" name="percentageten" 
+                                              required></td>
+                                            </tr>
+                                          </table>
+                                          <div><h4>Twelfth/HSC</h4></div>
+                                          <table>
+
+
+
+                                            <tr>
+                                              <td>Name of Board :</td>
+                                              <td><input type="text" name="nameofboardtwl" 
+                                                required></td>
+                                              </tr>                                          
+
+                                              <tr>
+                                                <td>Year of Passing :</td>
+                                                <td><input type="text" name="yearofpasstwl" 
+                                                  required></td>
+                                                </tr>
+
+                                                <tr>
+                                                  <td>Marks obtained :</td>
+                                                  <td><input type="text" name="marksobtainedtwl" 
+                                                    required></td>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <td>Percentage :</td>
+                                                    <td><input type="text" name="percentagetwl" 
+                                                      required></td>
+                                                    </tr>
+
+                                                  </table>
+                                                  <div><h3>Scanned Copies of Documents Uploaded: </h3></div>
+                                                  <table>
+                                                    <tr>
+                                                      <td>tenth marksheet :</td>
+                                                      <td>
+                                                       <input type="radio" name="tenth_marksheet" value="Yes" required>Yes
+                                                       <input type="radio" name="tenth_marksheet" value="No" required>No
+                                                     </td>
+                                                   </tr>
+
+
+                                                   <tr>
+                                                    <td>twlth marksheet :</td>
+                                                    <td>
+                                                     <input type="radio" name="twlth_marksheet" value="Yes" required>Yes
+                                                     <input type="radio" name="twlth_marksheet" value="No" required>No
+                                                   </td>
+                                                 </tr>
+
+                                                 <tr>
+                                                  <td>Scanned Adhaar :</td>
+                                                  <td>
+                                                   <input type="radio" name="Scanned_adhaar" value="Yes" required>Yes
+                                                   <input type="radio" name="Scanned_adhaar" value="No" required>No
+                                                 </td>
+                                               </tr>
+
+                                               <tr>
+                                                <td>PWD Certificate :</td>
+                                                <td>
+                                                 <input type="radio" name="PWD_Certificate" value="Yes" required>Yes
+                                                 <input type="radio" name="PWD_Certificate" value="No" required>No
+                                               </td>
+                                             </tr>
+
+                                             <tr>
+                                              <td>EWS Certificate :</td>
+                                              <td>
+                                               <input type="radio" name="EWS_Certificate" value="Yes" required>Yes
+                                               <input type="radio" name="EWS_Certificate" value="No" required>No
+                                             </td>
+                                           </tr>
+                                         </table>
+
+                                         <div>
+                                          <br></br>
+                                          <br></br>
+
+                                          I certified that all information provided by me in this form is correct to the best of my knowledge and belief.
+                                          I understand that any willful misrepresentation of facts will result in my dismissal from the Institute. If
+                                        admitted,I shall abide by all rules and regulations of the Institute.</p>
+                                      </div> 
+                                      <table>
+                                        <tr>
+                                          <td>Declaration by Candidate :</td>
+                                          <td>
+                                           <input type="radio" name="decl" value="Yes" required>Yes
+                                           <input type="radio" name="decl" value="No" required>No
+                                         </td>
+                                       </tr>
+                                       <tr>
+                                        <td>Signature of Candidate :</td>
+                                        <td><input type="file" name="sign" required></td>
+                                      </tr>
+                                    </table>
+
+
+                                    <table>
+
+
+                                     <tr>
+                                      <td><input type="submit" value="Submit" name="submit"></td>
+                                    </tr>
+                                  </table>
+                                </form>
+                              </body>
+                              </html>
